@@ -1,0 +1,101 @@
+
+.nav {
+    padding-right: 50px;
+    padding-left: 5px;
+    padding-top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0%;
+    margin-bottom: 0;
+    font-size: 16px; /* Default font size for nav items */
+    z-index: 100000000;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Specific styles for logo within nav */
+.navbar-logo img {
+    height: 50px; /* Adjusted height for logo */
+    width: auto;
+}
+
+/* Specific styles for navigation links within nav */
+.nav li a {
+    text-decoration: none;
+    color: #333; /* Text color */
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding: 8px 12px;
+    font-size: 16px; /* Font size for links */
+    transition: color 0.3s ease;
+}
+
+.nav li a:hover {
+    color: #007bff; /* Hover color */
+}
+
+/* Styles for the buttons within nav */
+/* Apply these styles specifically to buttons within the nav */
+.nav-buttons .button {
+    letter-spacing: -0.3px;
+    font-family: "colfax-light", sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 2;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-box-shadow: 0 20px 30px -10px rgba(26, 133, 255, 0.555);
+    box-shadow: 0 8px 10px -5px rgba(54, 54, 54, 0.6);
+    padding: 8px 40px ;
+    letter-spacing: -0.5px;
+    display: inline-block;
+    border-radius: 100px;
+    text-align: center;
+    position: relative;
+    background-color: #1e88e5;
+    color: #fff;
+    width: auto;
+    z-index: 2;
+}
+
+.nav-buttons .button:hover {
+    -webkit-box-shadow: 0 30px 40px -10px rgba(54, 54, 54, 0.8);
+    box-shadow: 0 30px 40px -10px rgba(54, 54, 54, 0.8);
+    -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    transform: scale(1.04);
+    color: #fff;
+}
+
+.nav-buttons .button:active {
+    -webkit-box-shadow: 0 20px 30px -10px rgba(54, 54, 54, 0.6);
+    box-shadow: 0 20px 30px -10px rgba(54, 54, 54, 0.6);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.nav-buttons .button:before {
+    -webkit-animation: pulse 2s ease infinite;
+    animation: pulse 2s ease infinite;
+    background: rgba(54, 54, 54, 0.4);
+    border-radius: 100px;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}

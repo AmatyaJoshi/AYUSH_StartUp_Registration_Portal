@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+p{
+    color: grey;
+}
+
+.nav {
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+    margin-bottom: 0;
+    font-size: 16px; /* Default font size for nav items */
+    z-index: 100000000;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Specific styles for logo within nav */
+.navbar-logo img {
+    height: 50px; /* Adjusted height for logo */
+    width: auto;
+}
+
+/* Specific styles for navigation links within nav */
+.nav li a {
+    text-decoration: none;
+    color: #333; /* Text color */
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    padding: 8px 12px;
+    font-size: 16px; /* Font size for links */
+    transition: color 0.3s ease;
+}
+
+.nav li a:hover {
+    color: #007bff; /* Hover color */
+}
+
+/* Styles for the buttons within nav */
+/* Apply these styles specifically to buttons within the nav */
+.nav-buttons .button {
+    letter-spacing: -0.3px;
+    font-family: "colfax-light", sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 2;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-box-shadow: 0 20px 30px -10px rgba(26, 133, 255, 0.555);
+    box-shadow: 0 8px 10px -5px rgba(54, 54, 54, 0.6);
+    padding: 8px 40px ;
+    letter-spacing: -0.5px;
+    display: inline-block;
+    border-radius: 100px;
+    text-align: center;
+    position: relative;
+    background-color: #1e88e5;
+    color: #fff;
+    width: auto;
+    z-index: 2;
+}
+
+.nav-buttons .button:hover {
+    -webkit-box-shadow: 0 30px 40px -10px rgba(54, 54, 54, 0.8);
+    box-shadow: 0 30px 40px -10px rgba(54, 54, 54, 0.8);
+    -webkit-transform: scale(1.04);
+    -ms-transform: scale(1.04);
+    transform: scale(1.04);
+    color: #fff;
+}
+
+.nav-buttons .button:active {
+    -webkit-box-shadow: 0 20px 30px -10px rgba(54, 54, 54, 0.6);
+    box-shadow: 0 20px 30px -10px rgba(54, 54, 54, 0.6);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.nav-buttons .button:before {
+    -webkit-animation: pulse 2s ease infinite;
+    animation: pulse 2s ease infinite;
+    background: rgba(54, 54, 54, 0.4);
+    border-radius: 100px;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+#heading{
+    text-transform: uppercase;
+    color: #2678fc;
+    font-weight: normal;
+}
+
+#msform{
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+ 
+#msform fieldset{
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 1400px;
+    margin-left: -400px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+
+
+.form-card{
+    text-align: left;
+    margin: 0 20% 0 20%;
+}
+
+#msform fieldset:not(:first-of-type){
+    display: none;
+}
+
+#msform input, #msform select, #msform textarea{
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #2C3E50;
+    background-color: #ECEFF1;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#msform input:focus, #msform textarea:focus{
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: px solid #2678fc;
+    outline-width: 0;
+}
+
+#msform .action-button{
+    width: 100px;
+    background: #2678fc;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right;
+}
+#msform .action-button:hover,
+#msform .action-button:focus {
+    background-color: #311B92
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    background-color: #000000
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #2678fc;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+}
+
+.blue-text {
+    color: #2678fc;
+    font-weight: normal
+}
+
+.steps {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left;
+}
+
+.fieldlabels1 {
+    color: gray;
+text-align: left;
+}
+
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #2678fc;
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 25%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f13e"
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f007"
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f030"
+}
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #2678fc
+}
+
+.progress {
+    height: 20px
+}
+
+.progress-bar {
+    background-color: #2678fc
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+
+.address-field {
+    width: 100%; /* Makes it full width, can be customized */
+    max-width: 500px; /* Maximum width constraint */
+    height: 150px; /* Fixed height */
+    resize: none; /* Allows vertical resizing only (optional) */
+    padding: 10px; /* Adds some padding inside the textarea */
+    font-size: 14px; /* Adjust font size */
+    border-radius: 5px; /* Optional: Adds rounded corners */
+    border: 1px solid #ccc; /* Optional: Light gray border */
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.address-field:focus {
+    border-color: #2678fc; /* Changes border color on focus */
+    outline: none; /* Removes default blue outline on focus */
+}
+
+
+footer {
+    background-color: #ffffff; /* Light background color for contrast */
+    color: #333;
+    
+    font-family: Arial, sans-serif;
+}
+
+.footer-top {
+    background-color: #2678fc; /* Primary color */
+    padding: 40px 0;
+    color: #fff;
+    border-top-left-radius:  40px;
+    border-top-right-radius:  40px;
+}
+
+.footer-content {
+    padding-top: 2%;
+}
+
+.footer-content .widget {
+    margin-bottom: 40px;
+}
+
+.footer-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content .widget-title {
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-content .ft-links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-content .ft-links li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer-content .ft-links li a:hover {
+    color: #d4e0ff; /* Lighter shade on hover */
+}
+
+/* Style for the logo section */
+.tf-logo-s {
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.logo-image {
+    max-width: 200px; /* Adjust the logo size */
+    height: auto;
+    display: inline-block;
+}
+
+.tf-logo-s a {
+    text-decoration: none;
+}
+
+.tf-logo-s a:hover .logo-image {
+    opacity: 0.8; /* Add a subtle hover effect */
+}
+
+/* Style for the visitor and update section */
+.visitorDv {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.visitorDv .col-md-12 {
+    margin-bottom: 10px;
+}
+
+/* Update section style */
+.Update {
+    display: inline-block;
+    margin-left: -100px;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.Update p {
+    margin: 0;
+    color: #ffffff; /* Primary color */
+}
+
+.Update p sup {
+    font-size: 10px;
+    vertical-align: super;
+    color: #ffffff;
+}
+
+/* Text alignment for small and large screens */
+@media (max-width: 768px) {
+    .visitorDv .col-md-12 {
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .visitorDv .col-md-12 {
+        text-align: right;
+    }
+}
+
+
+
+.copyright copyright-links pull-left{
+    text-align: left;
+    font-size: 100px;
+}
+
+.socialgroup-links {
+    padding: 0;
+}
+
+.socialgroup-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.socialgroup-links li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #2678fc;
+    text-align: center;
+}
+
+.socialgroup-links li a:hover {
+    background-color: #d4e0ff;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 20px 0;
+    color: #aaa;
+    font-size: 16px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    text-align: center;
+}
+
+.copyright-sec p {
+    color: #aaa;
+}
+
+.copyright-sec p:hover {
+    color: #fff; /* Lighter color on hover */
+}
